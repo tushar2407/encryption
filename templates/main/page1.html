@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    .a {
+      font-family: "Lucida";
+    }
+
+    .b {
+      font-family: 'MV Boli';
+    }
+
+    .d {
+      height: 10px;
+      width: 10px;
+    }
+
+    .e {
+      text-align: left;
+    }
+
+    .f {
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+    }
+
+    .g {
+      position: absolute;
+      bottom: 70px;
+
+    }
+    .i{
+  border: 25px groove rgb(16, 87, 240);
+  display: table-cell;
+  border-radius: 1000px; 
+  animation: spin 5s linear infinite;
+  
+}
+@keyframes spin{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+  </style>
+  <meta charset="UTF-8">
+  <title> ENCRYPT </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>  
+  <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: rgb(16, 87, 240);">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/encrypt-555479.png" width="30" height="30"
+      class="d-inline-block align-top" alt="">
+
+    <a class="navbar-brand  " href="#">ENCRYPT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'page1'%}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'encrypt'%}">Encrypt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'decrypt' %}">Decrypt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{% url 'account' %}">Account</a>
+        </li>
+
+        <div class="dropdown right">
+          <a class="btn dropdown-toggle dropdown-toggle-split mr-sm-2" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img
+              src="https://i1.wp.com/postmatura.al/wp-content/uploads/2018/10/blank-profile-picture-png.png?fit=512%2C512&ssl=1"
+              width:"30" height="30">
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav> -->
+
+    <!--    
+<h1 class="b"> Hello, {{request.user.first_name}} </h1></br>
+-->
+    <div id="carouselExampleInterval" class="carousel slide my-4" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img src="https://image.freepik.com/free-vector/blue-eye-ball-abstract-cyber-future-technology_42077-290.jpg"
+            class="d-block w-100" alt="..." height="500" width="100">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img
+            src="https://www.lifewire.com/thmb/kTTk2aoLsTizS2WQ4ZK92EoJLIA=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/encrypt_Alengo_getty-5865be8f3df78ce2c3596874.jpg"
+            class="d-block w-100" alt="..." height="500" width="100">
+        </div>
+        
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="jumbotron" style="background-color: rgb(30, 238, 238);">
+      <h1 class="display-4">Hello, {{request.user.first_name}}</h1>
+      <p class="lead">Looking to safeguard your data from hackers in any possible way ? Then you are just at the right
+        place. </p>
+      <hr class="my-4">
+      <p>This is definetely the place you are looking for to cipher your data in a way nobody can crack.</p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+        aria-expanded="false" aria-controls="multiCollapseExample1">Learn More</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+        aria-expanded="false" aria-controls="multiCollapseExample2">Types of cipher:</button>
+
+      <!--      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              In cryptography, encryption is the process of encoding a message or information in such a way that only
+              authorized parties can access it and those who are not authorized cannot.
+              Encryption does not itself prevent interference, but denies the intelligible content to a would-be
+              interceptor.
+              In an encryption scheme, the intended information or message, referred to as plaintext, is encrypted using
+              an encryption algorithm – a cipher – generating ciphertext that can be read only if decrypted.
+              For technical reasons, an encryption scheme usually uses a pseudo-random encryption key generated by an
+              algorithm.
+              It is in principle possible to decrypt the message without possessing the key, but, for a well-designed
+              encryption scheme, considerable computational resources and skills are required.
+              An authorized recipient can easily decrypt the message with the key provided by the originator to
+              recipients but not to unauthorized users.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Symmetric key </br>
+              In symmetric-key schemes, the encryption and decryption keys are the same. Communicating parties must
+              have the same key in order to achieve secure communication. An example of a symmetric key is the German
+              military's Enigma Machine. There were key settings for each day. </br>
+              Public key </br>
+              In public-key encryption schemes, the encryption key is published for anyone to use and encrypt messages.
+              However, only the receiving party has access to the decryption key that enables messages to be read.
+              Public-key encryption was first described in a secret document in 1973; before then all encryption
+              schemes were symmetric-key (also called private-key).
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--   
+<p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Learn More</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body">
+            In cryptography, encryption is the process of encoding a message or information in such a way that only authorized parties can access it and those who are not authorized cannot. 
+            Encryption does not itself prevent interference, but denies the intelligible content to a would-be interceptor. 
+            In an encryption scheme, the intended information or message, referred to as plaintext, is encrypted using an encryption algorithm – a cipher – generating ciphertext that can be read only if decrypted. 
+            For technical reasons, an encryption scheme usually uses a pseudo-random encryption key generated by an algorithm. 
+            It is in principle possible to decrypt the message without possessing the key, but, for a well-designed encryption scheme, considerable computational resources and skills are required. 
+            An authorized recipient can easily decrypt the message with the key provided by the originator to recipients but not to unauthorized users.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--<h2 class="b"> Files: </h2>
+
+<table class="table table-dark b">
+    <thead>
+      <tr>
+        <th scope="col">SNo.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Path</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 style="font-family: 'MV Boli';"> Encryption starts here : </h2>
+  <div class="card">
+      <div class="card-body">
+  <form>
+    <div class="form-group b">
+        <div>
+                <label for="exampleFormControlFile1">File path </label>
+      
+        </div>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+  </form>
+</div>
+</div>
+ -->
+ <div class="i">
+  <div class="i">
+    <div class="i">
+      <div class="i">
+        <div class="i">
+          <div class="i">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<div class="text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png" height="10" width="10"><p> Image courtsey Google </p>
+</div>
+</div>
+{% endblock %}
+<!--
+</body>
+
+</html> -->

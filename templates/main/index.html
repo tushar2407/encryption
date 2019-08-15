@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .b {
+      background-color: rgb(30, 238, 238);
+      height: 750px;
+      width: 500px;
+      color: snow;
+    }
+
+    .c {
+      position: absolute;
+      left: 750px;
+      top: 250px;
+      font-size: 25px;
+      font-family: "Ink free";
+    }
+  </style>
+  <title>ENCRYPT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="b">
+    <img style="color:white; position:absolute; left:100px; top:255px; font-size:50px;"
+      src="https://cdn.iconscout.com/icon/free/png-256/encrypt-555479.png" width="50" height="50"
+      class="d-inline-block align-bottom" alt="">
+
+    <p style="color:black; position:absolute; left:150px; top:245px; font-size:50px; font-family:'Candara'; font-weight: 1000"> <b>
+        ENCRYPT </b></p>
+  </div>
+
+  <div class="c">
+    <p> ENCRYPT </p>
+    <div class="card">
+      <div class="card-body">
+        <form method="POST" action="">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input name="username" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleFormControlInput1"
+              placeholder="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <a href="{% url 'signup' %}" class="btn btn-info" role="button">Signup</a>
+
+        
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!--    <div class="row py-3">
+            <div class="col-8 offset-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Login</h5>
+                  <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input name="username" type="text" class="form-control" id="username" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" href="{% url 'page1' %}">Submit</button>
+                  </form>
+                  {% if error %}
+                    <p>{{ error }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+              
+            <form>
+                    <div class="card">
+                            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+           
+                <button type="submit" class="btn btn-primary">Login</button>
+
+        </div>   
+    </div>
+</form>  -->
+  </div>
+
+
+</body>
+
+</html>

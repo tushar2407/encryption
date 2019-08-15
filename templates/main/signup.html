@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .b {
+      background-color: rgb(30, 238, 238);
+      height: 900px;
+      width: 500px;
+      color: snow;
+    }
+
+    .c {
+      position: absolute;
+      left: 750px;
+      top: 250px;
+      font-size: 25px;
+      font-family: "Ink free";
+    }
+  </style>
+  <title>ENCRYPT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="b">
+    <img style="color:white; position:absolute; left:100px; top:255px; font-size:50px;"
+      src="https://cdn.iconscout.com/icon/free/png-256/encrypt-555479.png" width="50" height="50"
+      class="d-inline-block align-bottom" alt="">
+
+    <p style="color:black; position:absolute; left:150px; top:245px; font-size:50px; font-family:'Candara'"> <b>
+        ENCRYPT </b></p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+  <div class="c">
+    <p> ENCRYPT </p>
+    
+        <form method="POST" action="">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="exampleFormControlInput1">First Name</label>
+            <input name="first_name" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="First name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Last Name</label>
+            <input name="last_name" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Username</label>
+            <input name="username" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input name="user" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Password</label>
+            <input name="password" type="password" class="form-control" id="exampleFormControlInput1"
+              placeholder="password" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Repeat Password</label>
+            <input name="re_password" type="password" class="form-control" id="exampleFormControlInput1"
+              placeholder="repeat password" required>
+          </div>
+          <a href="{% url 'login' %}" class="btn btn-info" role="button">Login</a>
+
+          <button type="submit" class="btn btn-primary">Sign-up</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+    
+</body>
+</html>

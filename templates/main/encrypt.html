@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="card my-4 b">
+        <div class="card-body">
+            <div class="form-group b">
+                <label for="exampleInputEmail1">Enter data to cipher</label>
+                <input class="form-control" name="text" placeholder="Enter Data" required>
+            </div>
+            <div class="row ml-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="card my-4 b">
+        <div class="card-body">
+            <div class="form-group b">
+                <label for="exampleInputEmail1">Enter full file path :</label>
+                <input class="form-control" name="text2" placeholder="Enter" required>
+            </div>
+            <div class="row ml-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="card my-4 b">
+    <div class="card-body">
+            <label for="exampleInputEmail1">Encrypted data </label>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- p means padding-->
+                <textarea class="form-control">{{encrypted_content}}</textarea></br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    {% endblock%}
